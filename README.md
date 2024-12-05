@@ -55,7 +55,7 @@ El proyecto busca combinar modelos de machine learning entrenados de manera inde
 - Validación de la mejora en rendimiento computacional y calidad de predicción en comparación con enfoques secuenciales.
 
 ### **Conclusión**
-Este proyecto es un ejemplo robusto de cómo las técnicas de computación de alto rendimiento pueden integrarse con machine learning para resolver problemas de clasificación, reduciendo tiempos y optimizando recursos.
+Este proyecto es un ejemplo robusto de cómo las técnicas de computación de alto rendimiento pueden integrarse con machine learning para resolver problemas de clasificación, reduciendo tiempos y optimizando recursos. Los resultados muestran mejoras significativas en rendimiento computacional y precisión, destacando la escalabilidad del enfoque en sistemas distribuidos.
 
 ---
 
@@ -68,10 +68,98 @@ Este proyecto es un ejemplo robusto de cómo las técnicas de computación de al
 - K-Nearest Neighbors (KNN)
 
 ---
+## Resultados Obtenidos
 
-## Resultados
+### Cluster: Resultados Finales
 
-Los resultados obtenidos bajo diferentes configuraciones (Cluster, MPI, Serial) se encuentran en el archivo `results_summary.txt`.
+#### Modelo: Logistic Regression
+- **Accuracy**: 0.8703
+- **Precision**: 0.8760
+- **Recall**: 0.8703
+- **F1_score**: 0.8711
+- **Train time**: 0.0907
+- **Memory used**: 0.7505
+
+#### Modelo: Random Forest
+- **Accuracy**: 0.9683
+- **Precision**: 0.9691
+- **Recall**: 0.9683
+- **F1_score**: 0.9683
+- **Train time**: 0.3137
+- **Memory used**: 2.0962
+
+#### Modelo: Gradient Boosting
+- **Accuracy**: 0.9670
+- **Precision**: 0.9676
+- **Recall**: 0.9670
+- **F1_score**: 0.9670
+- **Train time**: 1.5339
+- **Memory used**: 0.4756
+
+#### Modelo: SVC
+- **Accuracy**: 0.9230
+- **Precision**: 0.9282
+- **Recall**: 0.9230
+- **F1_score**: 0.9235
+- **Train time**: 0.0523
+- **Memory used**: 1.2432
+
+#### Modelo: KNN
+- **Accuracy**: 0.9280
+- **Precision**: 0.9337
+- **Recall**: 0.9280
+- **F1_score**: 0.9278
+- **Train time**: 0.0008
+- **Memory used**: 0.0000
+
+---
+
+### Entrenamiento en Serial usando Colab
+
+#### Modelo: K-Nearest Neighbors
+- **Accuracy**: 0.9930
+- **Precision**: 0.9931
+- **Recall**: 0.9930
+- **F1 Score**: 0.9930
+- **Train time**: 2.0560 segundos
+- **Memory used**: 4.46 MiB
+- **CPU Usage**: 6.50 %
+
+#### Modelo: Support Vector Classifier
+- **Accuracy**: 0.9773
+- **Precision**: 0.9784
+- **Recall**: 0.9773
+- **F1 Score**: 0.9774
+- **Train time**: 7.9673 segundos
+- **Memory used**: 6.80 MiB
+- **CPU Usage**: -34.00 %
+
+#### Modelo: Gradient Boosting
+- **Accuracy**: 0.9910
+- **Precision**: 0.9911
+- **Recall**: 0.9910
+- **F1 Score**: 0.9910
+- **Train time**: 19.1186 segundos
+- **Memory used**: 9.10 MiB
+- **CPU Usage**: -91.00 %
+
+#### Modelo: Random Forest
+- **Accuracy**: 0.9987
+- **Precision**: 0.9987
+- **Recall**: 0.9987
+- **F1 Score**: 0.9987
+- **Train time**: 8.0363 segundos
+- **Memory used**: 11.25 MiB
+- **CPU Usage**: -34.00 %
+
+#### Modelo: Logistic Regression
+- **Accuracy**: 0.8950
+- **Precision**: 0.8959
+- **Recall**: 0.8950
+- **F1 Score**: 0.8952
+- **Train time**: 3.1934 segundos
+- **Memory used**: 6.80 MiB
+- **CPU Usage**: 6.50 %
 
 ---
 
